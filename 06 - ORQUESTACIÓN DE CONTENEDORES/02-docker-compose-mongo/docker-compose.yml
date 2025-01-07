@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  mongo-docker:
+    image: mongo:latest
+    ports:
+      - 27025:27017
+    volumes:
+      - /D/DOCKER/MONGO/test-70165:/data/db  
