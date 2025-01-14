@@ -1,0 +1,28 @@
+components:
+  parameters:
+    schemas:
+      BodyNewsPost:
+        type: object
+        required:
+          - title
+          - body
+          - author
+          - image
+        properties:
+          title:
+            type: string
+            description: Título de la noticia.
+            example: ¡Hace calor!
+          body:
+            type: string
+            description: Cuerpo de la noticia.
+            example: Ola de calor en todo el país.
+          author:
+            type: string
+            description: Autor de la noticia.
+            example: Jorge Perez
+          image:
+            type: string
+            description: Url de la imagen de la noticia.
+            example: http://img.com/sdfd.jpg      
+            

@@ -1,0 +1,91 @@
+paths:
+  /news:
+    post:
+      tags:
+      - News
+      summary: Registro de noticia en base de datos.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/BodyNewsPost'
+        required: true
+      responses:
+        200:
+          description: Se registró la noticia correctamente.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/New/ResponsePost'
+        400:
+          description: error en registro
+          $ref: '#/components/schema/New/BadRequest'        
+    get:
+      tags:
+      - News
+      summary: Lista de noticias
+      responses:
+        200:
+          description: Lista de noticias 
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/New/ResponseGetAll'
+        400:
+          description: error en registro
+          $ref: '#/components/schema/New/BadRequest'  
+
+  /news/{id}:
+    get:
+      tags:
+      - News
+      summary: Listar noticias por id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: id referente a la noticia
+          schema:
+            type: string
+      responses:
+        200:
+          description: Noticia encontrada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/New/ResponsePost'      
+        404:
+          description: No se encuentra la noticia
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/New/NotFound'
+    put:
+      tags:
+      - News
+      summary: Actualizar noticia
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: id referente a la noticia
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/BodyNewsPost'      
+      responses:
+        200:
+          description: Se registró la noticia correctamente.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/New/ResponsePost'
+        400:
+          description: error en registro
+          $ref: '#/components/schema/New/BadRequest'  
+
+    delete:
+  

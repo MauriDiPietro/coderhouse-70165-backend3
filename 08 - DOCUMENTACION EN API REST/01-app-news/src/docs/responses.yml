@@ -1,0 +1,65 @@
+components:
+  schema:
+    New:
+      ResponsePost: 
+        type: object
+        properties:
+          _id:
+            type: string
+            description: id de la noticia.
+          title:
+            type: string
+            description: título de la noticia.
+          body:
+            type: string
+            description: cuerpo de la noticia.
+          author:
+            type: string
+            description: autor de la noticia.
+          image:
+            type: string
+            description: url de la imagen de la noticia.
+        example:
+          _id: fsdiohfsd9fysd9fs82343242jnksdf
+          title: ¡Argentina Campeón del mundo!
+          body: cuerpo de la noticia...............
+          author: Gonzalo Bonadeo
+          image: https://gifsdf.com/asdasd.jpg  
+      ResponseGetAll:
+        type: array
+        items:    
+          properties:
+            id:
+              type: string
+              description: id de la noticia.
+            title:
+              type: string
+              description: título de la noticia.
+            body:
+              type: string
+              description: cuerpo de la noticia.
+            author:
+              type: string
+              description: autor de la noticia.
+            image:
+              type: string
+              description: url de la imagen de la noticia.
+            date:
+              type: date
+              description: fecha de publicacion
+      NotFound:
+        type: object
+        properties:
+          msg:
+            type: string
+            description: No se encuentra en base de datos.
+        example:
+          msg: No se encontró el id ${id} en la base de datos.       
+      BadRequest:
+        type: object
+        properties:
+          msg:
+            type: string
+            description: Error en registro.
+        example:
+          msg: Validation schema error.      

@@ -1,0 +1,23 @@
+[2025-01-14T19:29:32.475] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-01-14T19:29:35.139] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-01-14T19:29:37.104] [INFO] default - Conectado a MongoDB!
+[2025-01-14T19:37:45.851] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-01-14T19:37:47.763] [INFO] default - Conectado a MongoDB!
+[2025-01-14T20:06:25.049] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-01-14T20:06:26.944] [INFO] default - Conectado a MongoDB!
+[2025-01-14T20:07:17.457] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-01-14T20:07:19.312] [INFO] default - Conectado a MongoDB!
+[2025-01-14T20:15:36.703] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-01-14T20:15:38.596] [INFO] default - Conectado a MongoDB!
+[2025-01-14T20:16:22.565] [INFO] default - POST /news
+[2025-01-14T20:26:43.973] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-01-14T20:26:45.882] [INFO] default - Conectado a MongoDB!
+[2025-01-14T20:27:11.935] [INFO] default - POST /news
+[2025-01-14T20:27:25.900] [INFO] default - GET /news
+[2025-01-14T20:28:32.365] [INFO] default - GET /news/6786f2cfabc40e94251380ad
+[2025-01-14T20:29:10.830] [INFO] default - PUT /news/6786f2cfabc40e94251380ad
+[2025-01-14T20:29:57.255] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-01-14T20:29:59.162] [INFO] default - Conectado a MongoDB!
+[2025-01-14T20:30:02.415] [INFO] default - PUT /news/6786f2cfabc40e94251380ad
+[2025-01-14T20:30:26.300] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-01-14T20:30:28.159] [INFO] default - Conectado a MongoDB!
